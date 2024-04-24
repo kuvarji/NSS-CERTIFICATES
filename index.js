@@ -56,7 +56,7 @@ let vg = false;
 
 function myfuction() {
     for (let i = 0; i <= blood.length; i++) {
-       if(blood[i] == vale.value.toLowerCase(). replace(/^\s+|\s+$/gm,'') ){
+       if(blood[i] == vale.value.toLowerCase().trim()){
        console.log("hello");
 vg=true;
        break;
@@ -194,7 +194,7 @@ vg=true;
 
 function myfuctionp() {
     for (let i = 0; i <= poster.length; i++) {
-       if(poster[i] == valep.value.toLowerCase()){
+       if(poster[i] == valep.value.toLowerCase().trim()){
        console.log("hello");
 vgp=true;
        break;
@@ -326,7 +326,7 @@ vgp=true;
 let vgspeech= false;
     function myfuctionspeech() {
       for (let i = 0; i <= speech.length; i++) {
-         if(speech[i] == valespeech.value.toLowerCase()){
+         if(speech[i] == valespeech.value.toLowerCase().trim()  ){
          console.log("hello");
   vgspeech=true;
          break;
@@ -457,7 +457,7 @@ let vgspeech= false;
     let vgdigi= false;
     function myfuctiondigital() {
       for (let i = 0; i <= digital.length; i++) {
-         if(digital[i] == valedigi.value.toLowerCase()){
+         if(digital[i] == valedigi.value.toLowerCase().trim() ){
          console.log("hello");
   vgdigi=true;
          break;
@@ -570,7 +570,7 @@ let election = [
 let vgE= false;
     function myfuctionelection() {
       for (let i = 0; i <= election.length; i++) {
-         if(election[i] == valeE.value.toLowerCase()){
+         if(election[i] == valeE.value.toLowerCase().trim() ){
          console.log("hello");
   vgE=true;
          break;
