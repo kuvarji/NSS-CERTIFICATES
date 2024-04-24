@@ -52,12 +52,11 @@ let  blood =[
 ];
 
 
-
 let vg = false;
 
 function myfuction() {
     for (let i = 0; i <= blood.length; i++) {
-       if(blood[i] == vale.value.toLowerCase()){
+       if(blood[i] == vale.value.toLowerCase().trim()){
        console.log("hello");
 vg=true;
        break;
