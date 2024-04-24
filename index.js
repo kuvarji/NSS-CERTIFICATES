@@ -56,7 +56,7 @@ let vg = false;
 
 function myfuction() {
     for (let i = 0; i <= blood.length; i++) {
-       if(blood[i] == vale.value.toLowerCase().trim()){
+       if(blood[i] == vale.value.toLowerCase(). replace(/^\s+|\s+$/gm,'') ){
        console.log("hello");
 vg=true;
        break;
