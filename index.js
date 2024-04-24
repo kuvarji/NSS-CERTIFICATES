@@ -57,7 +57,7 @@ let vg = false;
 
 function myfuction() {
     for (let i = 0; i <= blood.length; i++) {
-       if(blood[i] == vale.value){
+       if(blood[i] == vale.value.toLowerCase()){
        console.log("hello");
 vg=true;
        break;
@@ -70,14 +70,20 @@ vg=true;
     }
 
     else{
-      generatePDFBlood(vale.value);
-      alert("your blood donation certificate is generated successfully...");
-    
-    }
 
+      
+      
+      alert("your blood donation certificate is generated successfully...");
+
+     
+      generatePDFBlood(vale.value);
+      
+    }
+    
     
   }
 
+  var reload = false;
 
       const generatePDFBlood = async (name) =>{ 
         const {PDFDocument, StandardFonts, rgb} = PDFLib;
@@ -137,9 +143,16 @@ vg=true;
         }
       );
       saveAs(file);
+
+      reload = true;
+      
+      if(reload==true){
+        location.reload();
+      }
+      
       };
 
-
+      
 
       //  poster
 
@@ -181,7 +194,7 @@ vg=true;
 
 function myfuctionp() {
     for (let i = 0; i <= poster.length; i++) {
-       if(poster[i] == valep.value){
+       if(poster[i] == valep.value.toLowerCase()){
        console.log("hello");
 vgp=true;
        break;
@@ -194,9 +207,9 @@ vgp=true;
     }
 
     else{
-      generatePDFPoster(valep.value);
+     
       alert("your certification for poster making competition is generated successfully...");
-    
+      generatePDFPoster(valep.value);
     }
 
     
@@ -260,6 +273,13 @@ vgp=true;
     }
   );
   saveAs(file);
+
+  reload = true;
+      
+      if(reload==true){
+        location.reload();
+      }
+
   };
 
 
@@ -306,7 +326,7 @@ vgp=true;
 let vgspeech= false;
     function myfuctionspeech() {
       for (let i = 0; i <= speech.length; i++) {
-         if(speech[i] == valespeech.value){
+         if(speech[i] == valespeech.value.toLowerCase()){
          console.log("hello");
   vgspeech=true;
          break;
@@ -319,9 +339,9 @@ let vgspeech= false;
       }
   
       else{
-        generatePDFSpeech(valespeech.value);
+       
         alert("your speech competition certificate is generated successfully...");
-      
+        generatePDFSpeech(valespeech.value);
       }
   
       
@@ -384,6 +404,13 @@ let vgspeech= false;
       }
     );
     saveAs(file);
+
+    reload = true;
+      
+    if(reload==true){
+      location.reload();
+    }
+
     };
 
 
@@ -430,7 +457,7 @@ let vgspeech= false;
     let vgdigi= false;
     function myfuctiondigital() {
       for (let i = 0; i <= digital.length; i++) {
-         if(digital[i] == valedigi.value){
+         if(digital[i] == valedigi.value.toLowerCase()){
          console.log("hello");
   vgdigi=true;
          break;
@@ -443,9 +470,9 @@ let vgspeech= false;
       }
   
       else{
-        generatePDFDigitalPoster(valedigi.value);
+        
         alert("your digital making competition certificate is generated successfully...");
-      
+        generatePDFDigitalPoster(valedigi.value);
       }
   
       
@@ -509,6 +536,13 @@ let vgspeech= false;
       }
     );
     saveAs(file);
+
+    reload = true;
+      
+      if(reload==true){
+        location.reload();
+      }
+
     };
 
 // elections
@@ -536,7 +570,7 @@ let election = [
 let vgE= false;
     function myfuctionelection() {
       for (let i = 0; i <= election.length; i++) {
-         if(election[i] == valeE.value){
+         if(election[i] == valeE.value.toLowerCase()){
          console.log("hello");
   vgE=true;
          break;
@@ -549,9 +583,9 @@ let vgE= false;
       }
   
       else{
-        generatePDFElectionSpeech(valeE.value);
+        
         alert("your speech on election awareness competition certificate is generated successfully...");
-      
+        generatePDFElectionSpeech(valeE.value);
       }
   
       
@@ -615,4 +649,11 @@ let vgE= false;
       }
     );
     saveAs(file);
+
+    reload = true;
+      
+    if(reload==true){
+      location.reload();
+    }
+
     };
