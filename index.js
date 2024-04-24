@@ -162,6 +162,7 @@ vg=true;
       let submp = document.getElementById("submit_poster");
 
       let poster =[
+       "ankita shukla",
         "vidyank verma",
         "aditi singh", 
         "anu kushwaha", 
