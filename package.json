@@ -1,0 +1,23 @@
+{
+  "name": "kuvarji",
+  "version": "1.0.0",
+  "description": "nss website ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./input.css -o ./style.css --watch"
+  },
+  "keywords": [
+    "nsswebsite",
+    "bbdu",
+    "university;"
+  ],
+  "author": "kuvarji;",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  },
+  "dependencies": {
+    "tailwind-scrollbar-hide": "^1.1.7"
+  }
+}
