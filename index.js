@@ -658,10 +658,3 @@ let vgE= false;
 
     };
 
-
-gsap.from("#box1",{
-x:-200,
-duration:2,
-delay:2
-
-})
