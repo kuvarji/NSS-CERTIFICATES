@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-W3TWD42CZ3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-W3TWD42CZ3');
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
@@ -34,7 +25,7 @@
     }
     </style>
   <center>
-  <nav class=" w-full fixed top-0 z-30">
+  <nav id="conta" class=" w-full fixed top-0 z-30">
 <div class="" >
 
     <div class="  w-full h-[80px] bg-white flex justify-between  items-center ">
@@ -63,7 +54,7 @@
 
   </nav>
 
-  <section class=" mt-12  relative">
+  <section id="contb" class=" mt-12  relative">
     <div>
         
 <div class="relative">
@@ -656,6 +647,27 @@ Follow
   } );
   
   splide.mount();
+
+
+  var tl = gsap.timeline()
+       // artics
+
+    tl.from("#conta",{
+        opacity:0,
+        duration:0.5,
+        
+        y:-30
+        
+    })
+    tl.from("#contb div",{
+        opacity:0,
+        duration:0.5,
+        stagger:0.4,
+        y:-30
+        
+    })
+
+  
 </script>
 
 </body>
